@@ -66,6 +66,4 @@ app.add_handler(CommandHandler("hello", hello))
 app.add_handler(CommandHandler("Diem", scores))
 app.add_handler(CommandHandler("diem", scores))
 # Bắt đầu bot
-app.run_polling()
-
-        
+app.run_polling()        
