@@ -2,10 +2,10 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import requests
 from bs4 import BeautifulSoup
+import os
 
-
-# Cấu hình bot Telegram
-TOKEN = '7848085328:AAHoJ6IgTSeW1BfXwSp_YL4kXoBtQ3LCv7U'  # Thay bằng token từ BotFather
+# Đọc token từ biến môi trường
+TOKEN = os.getenv("BOT_TOKEN")
 
 # URL của trang đăng nhập và trang điểm học tập
 LOGIN_URL = "https://student.husc.edu.vn/Account/Login"
