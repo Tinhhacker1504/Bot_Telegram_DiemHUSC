@@ -68,5 +68,4 @@ app.add_handler(CommandHandler("diem", scores))
 # Bắt đầu bot
 app.run_polling()
 
-
         
